@@ -1,0 +1,58 @@
+<div>
+  <div
+    dAnchorBox
+    [view]="{ top: 180, bottom: 0 }"
+    [defaultAnchor]="'base-info'"
+    class="mymain"
+    style="position: relative"
+  >
+    <div class="mysidebar">
+      <d-sticky [view]="{ top: 180, bottom: 0 }">
+        <ul class="step-nav">
+          <li [dAnchorLink]="'base-info'" anchorActive="active">通讯连接</li>
+          <li [dAnchorLink]="'issue-list'" anchorActive="active">备用连接</li>
+          <li [dAnchorLink]="'frequency-list'" anchorActive="active">采集频率</li>
+        </ul>
+      </d-sticky>
+    </div>
+    <div class="mycontent">
+      <div [dAnchor]="'base-info'" class="section-block">
+        <h3 class="devui-h3-title">通讯连接</h3>
+        Server IP：192.168.11.123
+        <br />
+        OPC Server IP: 192.168.11.123
+        <br />
+        OPC Server ProgID: SUPCON.JXServer.1
+        <br />
+        OPC Server CLSID: A8E1EC00-1F75-11D4-9775-0000E8A370F0
+        <br />
+        OPC Server 机器名: OS152
+        <br />
+        DCOM 用户名: administrator
+        <br />
+        DCOM 密码 :123456
+      </div>
+      <div [dAnchor]="'issue-list'" class="section-block">
+        <h3 class="devui-h3-title">备用连接</h3>
+        备用 OPC Server IP: 192.168.11.123 
+        <br />
+        备用 OPC Server ProgID: SUPCON.JXServer.1 
+        <br />
+        备用 OPC Server CLSID: A8E1EC00-1F75-11D4-9775-0000E8A370F0 
+        <br />
+        备用 OPC Server 机器名: OS152 
+        <br />
+        备用 DCOM 用户名： administrator 
+        <br />
+        备用 DCOM 密码： 123456 
+
+      </div>
+      <div [dAnchor]="'frequency-list'" class="section-block">
+      <h3 class="devui-h3-title">采集频率</h3>
+      <br />
+      采集频率（毫秒）： 1000
+
+    </div>
+    </div>
+  </div>
+</div>
